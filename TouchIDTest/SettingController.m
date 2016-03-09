@@ -191,7 +191,7 @@
         }
     }];
     
-    // 删除一个置顶按钮
+    // 添加一个置顶按钮
     
     UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"置顶" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
         
@@ -199,8 +199,10 @@
         
         // 1. 更新数据
         
-        [_dataArray exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
-        
+        [_dataArray removeObjectAtIndex:indexPath.row];
+        [_dataArray insertObject:userDic atIndex:0];
+        //交换对象
+//        [_dataArray exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
         // 2. 更新UI
         
         NSIndexPath *firstIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.section];

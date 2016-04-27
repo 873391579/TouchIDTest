@@ -10,6 +10,7 @@
 #import "ZJTouchID.h"
 #import "CheckController.h"
 #import "DBManager.h"
+#import "ImageCollectionVC.h"
 
 @interface SettingController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -287,6 +288,12 @@
 
 - (IBAction)loginoutAction:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+- (IBAction)multipleSelectedImage:(id)sender {
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    ImageCollectionVC *imageCollection = [[ImageCollectionVC alloc] initWithCollectionViewLayout:layout];
+    imageCollection.title = @"图片多选";
+    [self.navigationController pushViewController:imageCollection animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

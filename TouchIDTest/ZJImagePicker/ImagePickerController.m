@@ -126,9 +126,14 @@ static NSString * const reuseIdentifier = @"ImageCollectionCell";
 -(void)readAlbumList{
     _asset = [ZJAsset shareZJAsset];
     [_asset getGroupList:^(NSArray *groups){
-        id fristGroup = [_asset getGroupInfo:0];
-        NSLog(@"相机胶卷:%@",fristGroup);
-        [self showPhotosInGroup:0];
+        [groups enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *type = [obj valueForProperty:ALAssetsGroupPropertyType];
+            NSString *name = [obj valueForProperty:ALAssetsGroupPropertyName];
+            NSLog(@"type:%@ name:%@",type,name);
+            if ([name isEqualToString:@"相机胶卷"]|| [type integerValue] == 16) {
+                [self showPhotosInGroup:idx];
+            }
+        }];
     }];
     
 }

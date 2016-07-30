@@ -130,8 +130,9 @@ static NSString * const reuseIdentifier = @"ImageCollectionCell";
             NSString *type = [obj valueForProperty:ALAssetsGroupPropertyType];
             NSString *name = [obj valueForProperty:ALAssetsGroupPropertyName];
             NSLog(@"type:%@ name:%@",type,name);
-            if ([name isEqualToString:@"相机胶卷"]|| [type integerValue] == 16) {
+            if ([type integerValue] == 16) {
                 [self showPhotosInGroup:idx];
+                 *stop = YES;
             }
         }];
     }];

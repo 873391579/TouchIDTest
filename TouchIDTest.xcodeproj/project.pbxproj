@@ -24,9 +24,6 @@
 		B606BDF81CD0A1E800734572 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDDC1CD0A1E800734572 /* delete@2x.png */; };
 		B606BDF91CD0A1E800734572 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDDD1CD0A1E800734572 /* down.png */; };
 		B606BDFA1CD0A1E800734572 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDDE1CD0A1E800734572 /* down@2x.png */; };
-		B606BDFB1CD0A1E800734572 /* finished.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDDF1CD0A1E800734572 /* finished.png */; };
-		B606BDFC1CD0A1E800734572 /* finished@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE01CD0A1E800734572 /* finished@2x.png */; };
-		B606BDFD1CD0A1E800734572 /* finished@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE11CD0A1E800734572 /* finished@3x.png */; };
 		B606BDFE1CD0A1E800734572 /* noselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE21CD0A1E800734572 /* noselect@2x.png */; };
 		B606BDFF1CD0A1E800734572 /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE31CD0A1E800734572 /* show.png */; };
 		B606BE001CD0A1E800734572 /* show@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE41CD0A1E800734572 /* show@2x.png */; };
@@ -35,6 +32,9 @@
 		B606BE031CD0A1E800734572 /* 添加图片.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE71CD0A1E800734572 /* 添加图片.png */; };
 		B606BE041CD0A1E800734572 /* 添加图片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B606BDE81CD0A1E800734572 /* 添加图片@2x.png */; };
 		B606BE051CD0A1E800734572 /* ZJAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = B606BDEA1CD0A1E800734572 /* ZJAsset.m */; };
+		B67C16411E24FAC400769C31 /* zjfinished.png in Resources */ = {isa = PBXBuildFile; fileRef = B67C163E1E24FAC400769C31 /* zjfinished.png */; };
+		B67C16421E24FAC400769C31 /* zjfinished@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B67C163F1E24FAC400769C31 /* zjfinished@2x.png */; };
+		B67C16431E24FAC400769C31 /* zjfinished@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B67C16401E24FAC400769C31 /* zjfinished@3x.png */; };
 		B6C202361C8826CE00EDD482 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C202351C8826CE00EDD482 /* DBManager.m */; };
 		B6C202381C883FA900EDD482 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C202371C883FA900EDD482 /* libsqlite3.tbd */; };
 		B6C95F201C7C18DA00430A86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C95F1F1C7C18DA00430A86 /* main.m */; };
@@ -91,9 +91,6 @@
 		B606BDDC1CD0A1E800734572 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
 		B606BDDD1CD0A1E800734572 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		B606BDDE1CD0A1E800734572 /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
-		B606BDDF1CD0A1E800734572 /* finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finished.png; sourceTree = "<group>"; };
-		B606BDE01CD0A1E800734572 /* finished@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finished@2x.png"; sourceTree = "<group>"; };
-		B606BDE11CD0A1E800734572 /* finished@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finished@3x.png"; sourceTree = "<group>"; };
 		B606BDE21CD0A1E800734572 /* noselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noselect@2x.png"; sourceTree = "<group>"; };
 		B606BDE31CD0A1E800734572 /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
 		B606BDE41CD0A1E800734572 /* show@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show@2x.png"; sourceTree = "<group>"; };
@@ -103,6 +100,9 @@
 		B606BDE81CD0A1E800734572 /* 添加图片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加图片@2x.png"; sourceTree = "<group>"; };
 		B606BDE91CD0A1E800734572 /* ZJAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAsset.h; sourceTree = "<group>"; };
 		B606BDEA1CD0A1E800734572 /* ZJAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAsset.m; sourceTree = "<group>"; };
+		B67C163E1E24FAC400769C31 /* zjfinished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zjfinished.png; sourceTree = "<group>"; };
+		B67C163F1E24FAC400769C31 /* zjfinished@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zjfinished@2x.png"; sourceTree = "<group>"; };
+		B67C16401E24FAC400769C31 /* zjfinished@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zjfinished@3x.png"; sourceTree = "<group>"; };
 		B6C202341C8826CE00EDD482 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		B6C202351C8826CE00EDD482 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		B6C202371C883FA900EDD482 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -200,6 +200,9 @@
 		B606BDD31CD0A1E800734572 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B67C163E1E24FAC400769C31 /* zjfinished.png */,
+				B67C163F1E24FAC400769C31 /* zjfinished@2x.png */,
+				B67C16401E24FAC400769C31 /* zjfinished@3x.png */,
 				B606BDD41CD0A1E800734572 /* check.png */,
 				B606BDD51CD0A1E800734572 /* check@2x.png */,
 				B606BDD61CD0A1E800734572 /* choose.png */,
@@ -211,9 +214,6 @@
 				B606BDDC1CD0A1E800734572 /* delete@2x.png */,
 				B606BDDD1CD0A1E800734572 /* down.png */,
 				B606BDDE1CD0A1E800734572 /* down@2x.png */,
-				B606BDDF1CD0A1E800734572 /* finished.png */,
-				B606BDE01CD0A1E800734572 /* finished@2x.png */,
-				B606BDE11CD0A1E800734572 /* finished@3x.png */,
 				B606BDE21CD0A1E800734572 /* noselect@2x.png */,
 				B606BDE31CD0A1E800734572 /* show.png */,
 				B606BDE41CD0A1E800734572 /* show@2x.png */,
@@ -418,18 +418,18 @@
 				B606BDF71CD0A1E800734572 /* delete.png in Resources */,
 				B6C95F2E1C7C18DA00430A86 /* LaunchScreen.storyboard in Resources */,
 				B606BDFA1CD0A1E800734572 /* down@2x.png in Resources */,
+				B67C16421E24FAC400769C31 /* zjfinished@2x.png in Resources */,
 				B606BDF81CD0A1E800734572 /* delete@2x.png in Resources */,
+				B67C16431E24FAC400769C31 /* zjfinished@3x.png in Resources */,
 				B606BDF01CD0A1E800734572 /* check.png in Resources */,
-				B606BDFD1CD0A1E800734572 /* finished@3x.png in Resources */,
 				B6C95F2B1C7C18DA00430A86 /* Assets.xcassets in Resources */,
 				B606BE021CD0A1E800734572 /* up@2x.png in Resources */,
 				B606BDF41CD0A1E800734572 /* choose@3x.png in Resources */,
-				B606BDFC1CD0A1E800734572 /* finished@2x.png in Resources */,
 				B606BE031CD0A1E800734572 /* 添加图片.png in Resources */,
 				B606BDF31CD0A1E800734572 /* choose@2x.png in Resources */,
 				B606BDF21CD0A1E800734572 /* choose.png in Resources */,
-				B606BDFB1CD0A1E800734572 /* finished.png in Resources */,
 				B6C95F291C7C18DA00430A86 /* Main.storyboard in Resources */,
+				B67C16411E24FAC400769C31 /* zjfinished.png in Resources */,
 				B606BDF91CD0A1E800734572 /* down.png in Resources */,
 				B606BE041CD0A1E800734572 /* 添加图片@2x.png in Resources */,
 				B606BDED1CD0A1E800734572 /* ImageCollectionCell.xib in Resources */,

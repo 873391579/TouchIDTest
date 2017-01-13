@@ -15,7 +15,7 @@
     // Initialization code
     
     [_selectedBtn setImage:[UIImage imageNamed:@"noselect@2x.png"] forState:UIControlStateNormal];
-    [_selectedBtn setImage:[UIImage imageNamed:@"finished@2x.png"] forState:UIControlStateSelected];
+    [_selectedBtn setImage:[UIImage imageNamed:@"zjfinished@2x.png"] forState:UIControlStateSelected];
     
 }
 

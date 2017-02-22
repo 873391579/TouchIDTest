@@ -378,6 +378,7 @@
 				TargetAttributes = {
 					B6C95F1A1C7C18DA00430A86 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = NRT74K3A4D;
 					};
 					B6C95F331C7C18DA00430A86 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -663,7 +664,7 @@
 			baseConfigurationReference = E8163E69A554273ECBBAF15E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NRT74K3A4D;
 				INFOPLIST_FILE = TouchIDTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -677,7 +678,7 @@
 			baseConfigurationReference = 9904972222A3098D63DB4082 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NRT74K3A4D;
 				INFOPLIST_FILE = TouchIDTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

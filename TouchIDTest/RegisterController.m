@@ -59,17 +59,21 @@
 - (BOOL)verificationData
 {
     NSString *message = nil;
-    if (![_passwordField.text isEqualToString:_repeatPassword.text]) {
+    NSCharacterSet *whiteNewChars = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *username = [_nameField.text stringByTrimmingCharactersInSet:whiteNewChars];
+    NSString *password = [_passwordField.text stringByTrimmingCharactersInSet:whiteNewChars];
+    NSString *repeatPassword = [_repeatPassword.text stringByTrimmingCharactersInSet:whiteNewChars];
+    if (![password isEqualToString:repeatPassword]) {
         message = @"两次输入密码不同";
     }
-    if (_repeatPassword.text.length!=6) {
+    if (repeatPassword.length!=6) {
         message = @"确认密码不正确";
     }
     
-    if (_passwordField.text.length!=6) {
+    if (password.length!=6) {
         message = @"请输入6位密码";
     }
-    if (_nameField.text.length==0) {
+    if (username.length==0) {
         message = @"请输入账号";
     }
     

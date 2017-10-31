@@ -31,12 +31,14 @@
 - (void)initAsset{
     if (!self.assetsLibrary) {
         _assetsLibrary = [[ALAssetsLibrary alloc] init];
+        /*
         if ([[UIDevice currentDevice].systemVersion floatValue] > 6.0) {
 
             [_assetsLibrary writeImageDataToSavedPhotosAlbum:nil metadata:nil completionBlock:^(NSURL *assetURL, NSError *error) {
                 
             }];
         }
+         */
     }
 }
 

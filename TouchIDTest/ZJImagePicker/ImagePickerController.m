@@ -10,7 +10,9 @@
 #import "ZJAsset.h"
 #import "BottonMenu.h"
 #import "ImageCollectionCell.h"
-
+//状态栏高
+#define statusBarH    CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
+#define safeAreaBottomH  (statusBarH > 20 ? 34 : 0)
 @interface ImagePickerController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,BottonMenuDelegate>
 
 @property(nonatomic,strong)ZJAsset               *asset;
@@ -40,12 +42,13 @@ static NSString * const reuseIdentifier = @"ImageCollectionCell";
 
 #pragma mark - initCollectionView
 - (void)initCollectionView{
-    UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(0, 19, ZJScreen_width, 1)];
+    UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(0, statusBarH - 1, ZJScreen_width, 1)];
     line.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:line];
+
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     
-    _collectionPhotoList = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 20, ZJScreen_width, ZJScreen_height - 44-20) collectionViewLayout:flowLayout];
+    _collectionPhotoList = [[UICollectionView alloc] initWithFrame:CGRectMake(0, statusBarH, ZJScreen_width, ZJScreen_height - 44-statusBarH-safeAreaBottomH) collectionViewLayout:flowLayout];
     _collectionPhotoList.alwaysBounceVertical = YES;
     _collectionPhotoList.allowsMultipleSelection = YES;
     _collectionPhotoList.backgroundColor = [UIColor groupTableViewBackgroundColor];
@@ -63,7 +66,7 @@ static NSString * const reuseIdentifier = @"ImageCollectionCell";
 #pragma mark - for bottom menu
 - (void)initBottomMenu{
     __weak __typeof(self)tmpSelf = self;
-    self.bottonMenu = [[BottonMenu alloc] initWithFrame:CGRectMake(0, ZJScreen_height-44,ZJScreen_width , 44) cancelAction:^{
+    self.bottonMenu = [[BottonMenu alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_collectionPhotoList.frame),ZJScreen_width , 44) cancelAction:^{
         if ([self.delegate respondsToSelector:@selector(didCancelImagePickerController)]) {
             [self.delegate didCancelImagePickerController];
         }
@@ -116,10 +119,9 @@ static NSString * const reuseIdentifier = @"ImageCollectionCell";
     self.view.backgroundColor = Menu_Global_Color;
     // Do any additional setup after loading the view.
     
-    [self initBottomMenu];
     [self readAlbumList];
     [self initCollectionView];
-    
+    [self initBottomMenu];
 }
 
 #pragma mark 读取相册资源

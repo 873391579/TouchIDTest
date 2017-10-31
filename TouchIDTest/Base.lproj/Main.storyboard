@@ -1,18 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NuF-tA-MgH">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NuF-tA-MgH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="OLK-bQ-TP3">
             <objects>
                 <navigationController id="NuF-tA-MgH" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KAX-Jg-H1p">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -28,8 +31,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Yn2-MM-5By"/>
+                        <viewControllerLayoutGuide type="bottom" id="OxA-JR-IOq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -37,7 +40,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的账户" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-VI-55f">
                                 <rect key="frame" x="78" y="143" width="194" height="30"/>
-                                <color key="backgroundColor" red="0.87327816609999998" green="0.85590563320000002" blue="0.9931640625" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87327816609999998" green="0.85590563320000002" blue="0.9931640625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="wrJ-ZZ-nDO"/>
                                 </constraints>
@@ -46,7 +49,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入6位密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-1v-jWc">
                                 <rect key="frame" x="78" y="206" width="194" height="30"/>
-                                <color key="backgroundColor" red="0.87327816609999998" green="0.85590563320000002" blue="0.9931640625" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87327816609999998" green="0.85590563320000002" blue="0.9931640625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="G1H-p3-eH7"/>
                                 </constraints>
@@ -55,15 +58,15 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agY-Jg-H1Z">
                                 <rect key="frame" x="78" y="270" width="194" height="40"/>
-                                <color key="backgroundColor" red="0.39387149276818084" green="0.97254901959999995" blue="0.91949467691384035" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.39387149276818084" green="0.97254901959999995" blue="0.91949467691384035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bIa-1h-gWZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
                                 <state key="normal" title="密码登录">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.82840768909999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.82840768909999996" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginMethodAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEt-lv-HZW"/>
@@ -77,19 +80,19 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="指纹登录">
-                                    <color key="titleColor" red="0.20525910611591641" green="0.46647163366344652" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.20525910611591641" green="0.46647163366344652" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="selectWayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7M8-cf-2TU"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Dg-VI-55f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="DZp-bm-z4r"/>
                             <constraint firstItem="agY-Jg-H1Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="PVQ-cl-g7T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="agY-Jg-H1Z" secondAttribute="trailing" constant="87" id="eBN-Zz-KqW"/>
-                            <constraint firstItem="agY-Jg-H1Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="206" id="hFS-IZ-EWW"/>
+                            <constraint firstItem="agY-Jg-H1Z" firstAttribute="top" secondItem="Yn2-MM-5By" secondAttribute="bottom" constant="206" id="hFS-IZ-EWW"/>
                             <constraint firstItem="agY-Jg-H1Z" firstAttribute="top" secondItem="9Dg-VI-55f" secondAttribute="bottom" constant="97" id="hHz-UD-zbT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Dg-VI-55f" secondAttribute="trailing" constant="87" id="hNz-yO-LKf"/>
                             <constraint firstItem="pjK-HG-H7K" firstAttribute="top" secondItem="agY-Jg-H1Z" secondAttribute="bottom" constant="37" id="joe-Ff-Vto"/>
@@ -106,7 +109,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="loginBtn" destination="agY-Jg-H1Z" id="nhz-hN-Xc0"/>
                         <outlet property="loginWayBtn" destination="pjK-HG-H7K" id="dtp-hW-OnI"/>
@@ -125,8 +127,8 @@
             <objects>
                 <viewController id="EZ6-sN-3y1" customClass="SettingController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="leK-Re-yLK"/>
-                        <viewControllerLayoutGuide type="bottom" id="KOl-db-nbt"/>
+                        <viewControllerLayoutGuide type="top" id="BdT-Ip-vLO"/>
+                        <viewControllerLayoutGuide type="bottom" id="wW1-FV-Cy5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FvV-Yn-oPL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -134,14 +136,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCW-XP-9lo">
                                 <rect key="frame" x="71" y="617" width="230" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.072167663950000002" blue="0.27797910329999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.072167663950000002" blue="0.27797910329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="wza-Jv-Y9u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="退出">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.82840768909999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.82840768909999996" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginoutAction:" destination="EZ6-sN-3y1" eventType="touchUpInside" id="cjc-6p-whB"/>
@@ -155,26 +157,26 @@
                             </switch>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yLG-Jp-JyZ">
                                 <rect key="frame" x="-4" y="64" width="383" height="484"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置指纹登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7W-qA-ezw">
                                 <rect key="frame" x="44" y="572" width="150" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="h7W-qA-ezw" firstAttribute="centerY" secondItem="SE9-WO-C8m" secondAttribute="centerY" id="7F9-IB-G7Q"/>
                             <constraint firstItem="PCW-XP-9lo" firstAttribute="top" secondItem="h7W-qA-ezw" secondAttribute="bottom" constant="14" id="9gd-nU-zWI"/>
-                            <constraint firstItem="yLG-Jp-JyZ" firstAttribute="top" secondItem="leK-Re-yLK" secondAttribute="bottom" id="IcH-Fd-hbp"/>
+                            <constraint firstItem="yLG-Jp-JyZ" firstAttribute="top" secondItem="BdT-Ip-vLO" secondAttribute="bottom" id="IcH-Fd-hbp"/>
                             <constraint firstItem="h7W-qA-ezw" firstAttribute="leading" secondItem="FvV-Yn-oPL" secondAttribute="leadingMargin" constant="28" id="Otw-iN-CoM"/>
                             <constraint firstItem="SE9-WO-C8m" firstAttribute="leading" secondItem="h7W-qA-ezw" secondAttribute="trailing" constant="58" id="Pld-kt-SnL"/>
                             <constraint firstItem="yLG-Jp-JyZ" firstAttribute="leading" secondItem="FvV-Yn-oPL" secondAttribute="leadingMargin" constant="-20" id="QYj-dC-BxK"/>
                             <constraint firstItem="PCW-XP-9lo" firstAttribute="top" secondItem="SE9-WO-C8m" secondAttribute="bottom" constant="14" id="hLy-rN-Dga"/>
                             <constraint firstItem="SE9-WO-C8m" firstAttribute="top" secondItem="yLG-Jp-JyZ" secondAttribute="bottom" constant="24" id="jc1-vS-qB8"/>
-                            <constraint firstItem="KOl-db-nbt" firstAttribute="top" secondItem="PCW-XP-9lo" secondAttribute="bottom" constant="14" id="jhr-Nb-iF0"/>
+                            <constraint firstItem="wW1-FV-Cy5" firstAttribute="top" secondItem="PCW-XP-9lo" secondAttribute="bottom" constant="14" id="jhr-Nb-iF0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PCW-XP-9lo" secondAttribute="trailing" constant="58" id="oM7-zA-HKF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yLG-Jp-JyZ" secondAttribute="trailing" constant="-20" id="oR6-X3-d7q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SE9-WO-C8m" secondAttribute="trailing" constant="58" id="pLJ-XP-dTq"/>
@@ -188,7 +190,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="swich" destination="SE9-WO-C8m" id="qpf-7K-Wxk"/>
                         <outlet property="tableView" destination="yLG-Jp-JyZ" id="oux-ge-Fne"/>
@@ -204,16 +205,15 @@
             <objects>
                 <viewController id="lQi-gD-uSW" customClass="CheckController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7rj-ab-iAN"/>
-                        <viewControllerLayoutGuide type="bottom" id="YcB-Dh-waD"/>
+                        <viewControllerLayoutGuide type="top" id="n48-ik-v7i"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jD-Lg-reH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mXB-4j-MC3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="身份认证" id="Ug2-cN-gh9"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vds-h2-Yfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,8 +224,8 @@
             <objects>
                 <viewController id="gJE-sw-Bza" customClass="RegisterController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dZT-gS-Lbs"/>
-                        <viewControllerLayoutGuide type="bottom" id="W1I-JZ-LRx"/>
+                        <viewControllerLayoutGuide type="top" id="jTx-Df-shL"/>
+                        <viewControllerLayoutGuide type="bottom" id="iQi-Hw-R46"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kyt-ff-KhL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -233,21 +233,25 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入账户" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUV-IZ-et4">
                                 <rect key="frame" x="71" y="150" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入6位密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JYP-JJ-hEm">
                                 <rect key="frame" x="71" y="209" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-hV-eHd">
                                 <rect key="frame" x="71" y="261" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5O-hX-o5o">
                                 <rect key="frame" x="71" y="339" width="190" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="注册"/>
                                 <connections>
@@ -255,10 +259,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="W24-EV-559"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="nameField" destination="AUV-IZ-et4" id="6oC-on-jxo"/>
                         <outlet property="passwordField" destination="JYP-JJ-hEm" id="9oL-0g-bNi"/>
